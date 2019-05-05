@@ -1,5 +1,13 @@
-import React from 'react';
+import React from "react";
 
-const EditPage = () => <div>Edit Page</div>;
+const EditPage = props => {
+  console.log(props);
+
+  return (
+      <div>
+          ID: {props.match.params.id}
+      </div>
+  );
+};
 
 export default EditPage;
